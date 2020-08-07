@@ -13,3 +13,4 @@ mix.jigsaw()
         postCss: [ tailwindcss('./tailwind.config.js') ],
     })
     .version();
+
