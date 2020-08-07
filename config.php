@@ -11,4 +11,7 @@ return [
             'author' => 'Jimmy Aldape'
         ],
     ],
+    'analytics' => [
+        'enabled' => false,
+    ]
 ];
