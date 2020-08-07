@@ -4,3 +4,17 @@
 
 @import "./node_modules/tailwindcss/utilities";
 
+.post p {
+  @apply mb-4;
+}
+
+.post a {
+  @apply text-blue-400;
+}
+.post a:hover {
+  @apply underline;
+}
+
+.post h2 {
+  @apply text-lg text-gray-500 mb-1;
+}

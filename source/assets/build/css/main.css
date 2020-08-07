@@ -18033,6 +18033,28 @@ video {
           animation: bounce 1s infinite;
 }
 
+.post p {
+  margin-bottom: 1rem;
+}
+
+.post a {
+  --text-opacity: 1;
+  color: #63b3ed;
+  color: rgba(99, 179, 237, var(--text-opacity));
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.post h2 {
+  font-size: 1.125rem;
+  --text-opacity: 1;
+  color: #a0aec0;
+  color: rgba(160, 174, 192, var(--text-opacity));
+  margin-bottom: 0.25rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
