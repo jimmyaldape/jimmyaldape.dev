@@ -12,6 +12,11 @@
         @include('_partials.analytics')
 </head>
 <body class="min-w-screen min-h-screen text-white bg-gray-800 relative">
+@if($page->analytics->enabled)
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7MM873" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+@endif
 <header class="absolute top-0 flex justify-between w-full p-10 pb-0 z-50">
     <div class="flex">
         <a href="/">
