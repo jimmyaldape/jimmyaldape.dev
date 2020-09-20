@@ -1,3 +1,6 @@
+---
+description: Jimmy Aldape is an experienced full-stack software engineer that specializes in the design, development, and architectural planning of software systems with a focus on web applications, database architecture and domain driven design who has a passion for designing beautiful and functional user experiences.
+---
 @extends('_layouts.master')
 
 @section('body')
