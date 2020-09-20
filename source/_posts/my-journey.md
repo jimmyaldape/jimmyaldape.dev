@@ -1,6 +1,7 @@
 ---
 extends: _layouts.post
 title: My Journey
+description: Having no financial support and a growing family to take care of, I went back to school to get my computer science degree. I loved coding and could do it all day, but the fact of the matter is, life happened.
 date: 2020-08-07
 section: content
 ---

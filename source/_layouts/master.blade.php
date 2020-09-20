@@ -7,7 +7,7 @@
         <meta name="referrer" content="always">
         <link rel="canonical" href="{{ $page->getUrl() }}">
         <meta name="description" content="{{ $page->description }}">
-        <title>{{ $page->title }}</title>
+        <title>{{ isset($page->title) ? $page->title . ' | ' : '' }}Jimmy Aldape | Full-stack Software Engineer</title>
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         @include('_partials.analytics')
 </head>
