@@ -1,9 +1,9 @@
 ---
 extends: _layouts.post
-title: Welcome to my Official Blog
-description: Welcome to my official blog. It's been a long journey to get to where I am but for now I will mostly be rambling about things I learn in development with a little photography sprinkled in between.
-date: 2020-08-06
+title: Welcome to my Blog
+description: Welcome to my blog. I am software engineer who loves to work with the TALL stack - Tailwind CSS, AlpineJS, Laravel, and Livewire.
+date: 2021-03-26
 section: content
 ---
 
-Hi! My name is Jimmy. Welcome to my official blog. It's been a long journey to get to where I am but for now I will mostly be rambling about things I learn in development with a little photography sprinkled in between. I'm not the smartest of the bunch, but I do know how to use google and ask questions. If you like what you read, please follow me on twitter [@jimmyaldape](https://twitter.com/jimmyaldape). Thank you.
+Hi! My name is Jimmy. Welcome to my blog. I am software engineer who loves to work with the TALL stack - Tailwind CSS, AlpineJS, Laravel, and Livewire. Follow along with me as I go through this continuous learning journey. I will try my best to document what I learn and what I'm interested in. If you like what you read, please follow me on twitter [@jimmyaldape](https://twitter.com/jimmyaldape). Thank you.
