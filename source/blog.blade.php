@@ -2,8 +2,11 @@
 
 @section('body')
     <div class="min-w-screen min-h-screen flex flex-col items-center justify-center">
-        <p class="mb-8 p-4">
-            Hello. My name is Jimmy. Welcome to my blog. I am software engineer who loves to work with the TALL stack - Tailwind CSS, AlpineJS, Laravel, and Livewire. Though I use VueJS and ReactJS quite a bit. Follow along with me as I go through this continuous learning journey. I will try my best to document lessons I learn along the way. If you like what you read, dont forget to follow me on twitter <a href="https://twitter.com/jimmyaldape" title="follow me on twitter">@jimmyaldape</a>. Please and Thank you.
+        <p class="mb-2 p-4 leading-5">
+        Welcome to my blog. I am software engineer who loves to work with the TALL stack - Tailwind CSS, AlpineJS, Laravel, and Livewire. Though I use VueJS and ReactJS quite a bit. Follow along with me as I go through this continuous learning journey. I will try my best to document lessons I learn along the way.
+        </p>
+        <p class="leading-5 mb-8 p-4">
+            If you like what you read, dont forget to follow me on twitter <a href="https://twitter.com/jimmyaldape" title="follow me on twitter">@jimmyaldape</a>. Please and Thank you.
         </p>
         <ul class="">
             @foreach ($posts as $post)
