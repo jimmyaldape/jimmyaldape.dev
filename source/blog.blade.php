@@ -1,21 +1,26 @@
 @extends('_layouts.master')
 
 @section('body')
-    <div class="min-w-screen min-h-screen flex flex-col items-center justify-center">
-        <p class="mb-2 p-4 leading-5">
-        Welcome to my blog. I am software engineer who loves to work with the TALL stack - Tailwind CSS, AlpineJS, Laravel, and Livewire. Though I use VueJS and ReactJS quite a bit. Follow along with me as I go through this continuous learning journey. I will try my best to document lessons I learn along the way.
-        </p>
-        <p class="leading-5 mb-8 p-4">
-            If you like what you read, dont forget to follow me on twitter <a href="https://twitter.com/jimmyaldape" title="follow me on twitter">@jimmyaldape</a>. Please and Thank you.
-        </p>
-        <ul class="">
-            @foreach ($posts as $post)
-                <li class="p-4">
-                    <a href="{{ $post->getPath() }}">{{ $post->title }}<br>
-                    <span class="text-xs text-gray-400">{{ date('F j, Y', $post->date) }}</span>
-                    </a>
-                </li>
+    <div class="content min-w-screen min-h-screen flex flex-col items-center justify-center">
+        @foreach ($posts as $post)
+                <section class="w-full">
+                    <div class="pb-10 w-4/5 lg:w-3/5 mx-auto">
+                        <div class="preview-thumbnail">
+
+                        </div>
+                        <div class="preview">
+                            <div>
+                                <a class="text-3xl text-bold" href="{{ $post->getPath() }}">{{ $post->title }}</a>
+                            </div>
+                            <div>
+                                <span class="text-xs text-gray-400">{{ date('F j, Y', $post->date) }}</span>
+                            </div>
+                            <div class="mt-4">
+                                {{ $post->snippet }}
+                            </div>
+                        </div>
+                    </div>
+                </section>
             @endforeach
-        </ul>
     </div>
 @endsection
