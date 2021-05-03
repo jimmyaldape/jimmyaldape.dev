@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: [
     './source/**/*.html',
     './source/**/*.vue',
@@ -6,6 +7,7 @@ module.exports = {
     './source/**/*.php',
     './source/**/*.blade.php',
   ],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },
