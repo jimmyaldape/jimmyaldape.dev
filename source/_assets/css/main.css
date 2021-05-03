@@ -6,13 +6,26 @@
     @apply mb-4;
 }
 
-.post a {
+a {
     @apply text-blue-400;
 }
-.post a:hover {
-    @apply underline;
+a:hover {
+    @apply underline text-blue-300;
 }
 
+.logo {
+    @apply text-white;
+}
+.post {
+    @apply mt-8;
+}
 .post h2 {
-    @apply text-lg text-gray-500 mb-1;
+    @apply text-3xl text-blue-400 text-center;
+}
+.post .author {
+    @apply text-sm text-gray-400 text-center;
+}
+
+.post .content {
+    @apply mt-8 leading-loose;
 }
