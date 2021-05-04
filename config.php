@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Str;
+
 return [
     'production' => false,
     'baseUrl' => '',
@@ -11,5 +13,8 @@ return [
     ],
     'analytics' => [
         'enabled' => false,
-    ]
+    ],
+    'current' => function ($page, $section) {
+        return Str::contains($page->getPath(), $section) ? 'current' : '';
+    },
 ];

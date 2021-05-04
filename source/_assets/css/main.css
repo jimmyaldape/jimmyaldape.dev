@@ -2,23 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-.post p {
-    @apply mb-4;
-}
-
 a {
     @apply text-blue-400;
 }
 a:hover {
-    @apply underline text-blue-300;
+    @apply underline text-yellow-400;
+}
+
+.links a:hover {
+    @apply no-underline;
+}
+
+.links div:hover {
+    @apply border-b border-yellow-400;
 }
 
 .logo {
     @apply text-white;
 }
-.post {
-    @apply mt-8;
+
+.logo:hover {
+    @apply rounded-full ring-4 text-white;
 }
+
+.preview a:hover {
+    @apply no-underline;
+}
+
+.post p {
+    @apply mb-6;
+}
+
 .post h2 {
     @apply text-3xl text-blue-400 text-center;
 }
@@ -28,4 +42,12 @@ a:hover {
 
 .post .content {
     @apply mt-8 leading-loose;
+}
+
+.current {
+    @apply text-yellow-400;
+}
+
+.preview .snippet {
+    @apply mt-4 leading-loose;
 }
