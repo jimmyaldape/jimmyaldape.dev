@@ -8,7 +8,8 @@ return [
     'collections' => [
         'posts' => [
             'path' => 'blog/{date|Y/m}/{-filename}',
-            'author' => 'Jimmy Aldape'
+            'author' => 'Jimmy Aldape',
+            'sort' => '-date'
         ],
     ],
     'analytics' => [
