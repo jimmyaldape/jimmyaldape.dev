@@ -29,12 +29,25 @@ a:hover {
     @apply no-underline;
 }
 
+
+.current {
+    @apply text-yellow-400;
+}
+
+.preview .snippet {
+    @apply mt-4 leading-loose;
+}
+
 .post p {
     @apply mb-6;
 }
 
 .post h2 {
     @apply text-3xl text-blue-400 text-center;
+}
+
+.post h3 {
+    @apply text-2xl mb-2 text-yellow-100;
 }
 .post .author {
     @apply text-sm text-gray-400 text-center;
@@ -44,10 +57,13 @@ a:hover {
     @apply mt-8 leading-loose;
 }
 
-.current {
-    @apply text-yellow-400;
+.post img{
+    @apply mt-4;
+}
+.post .content em {
+    @apply text-lg text-blue-200;
 }
 
-.preview .snippet {
-    @apply mt-4 leading-loose;
+.post .content ul {
+    @apply list-disc list-inside mb-4;
 }
