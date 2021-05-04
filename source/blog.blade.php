@@ -12,7 +12,7 @@
         <h2 class="text-2xl uppercase text-gray-600 text-center mb-10">Blog</h2>
         @foreach ($posts as $post)
                 <section class="w-full">
-                    <div class="pb-10 w-4/5 lg:w-3/5 mx-auto">
+                    <div class="pb-20 w-4/5 lg:w-3/5 mx-auto">
                         <div class="preview-thumbnail">
 
                         </div>
