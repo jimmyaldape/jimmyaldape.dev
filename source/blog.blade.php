@@ -1,4 +1,11 @@
 @extends('_layouts.master')
+@section('custom_script')
+    <script>
+        window.addEventListener('load', (event) => {
+            window.fathom.trackGoal('PDFEXPCS', 0);
+        });
+    </script>
+@endsection
 @section('offset', 'pt-40 pb-16')
 @section('body')
     <div class="content  flex flex-col items-center justify-center">
@@ -25,3 +32,4 @@
             @endforeach
     </div>
 @endsection
+
