@@ -3,7 +3,7 @@
     @if($page->goal_code)
     <script>
         window.addEventListener('load', (event) => {
-            window.fathom.trackGoal({{$page->goal_code}}, 0);
+            window.fathom.trackGoal('{{$page->goal_code}}', 0);
         });
     </script>
     @endif
