@@ -3,6 +3,9 @@
     <script>
         window.addEventListener('load', (event) => {
             window.fathom.trackGoal('PDFEXPCS', 0);
+            @if($post->goal_code)
+                window.fathom.trackGoal({{$post->goal_code}}, 0);
+            @endif
         });
     </script>
 @endsection
