@@ -1,4 +1,13 @@
 @extends('_layouts.master')
+@section('custom_script')
+    @if($page->goal_code)
+    <script>
+        window.addEventListener('load', (event) => {
+            window.fathom.trackGoal({{$page->goal_code}}, 0);
+        });
+    </script>
+    @endif
+@endsection
 @section('offset', 'pt-40 pb-16')
 @section('body')
     <div class="mb-10 w-4/5 lg:w-3/5 mx-auto">
