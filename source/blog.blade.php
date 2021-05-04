@@ -11,7 +11,7 @@
                         </div>
                         <div class="preview">
                             <div>
-                                <a class="title text-3xl" href="{{ $post->getPath() }}">{{ $post->title }}</a>
+                                <a class="title text-2xl lg:text-3xl" href="{{ $post->getPath() }}">{{ $post->title }}</a>
                             </div>
                             <div>
                                 <span class="text-xs text-gray-400">{{ date('F j, Y', $post->date) }}</span>
