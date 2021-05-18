@@ -23,7 +23,7 @@ that I decided it was time. It was obvious they had stepped on giant toes and pr
 So I set my plan in motion, hoping I could become a customer sooner rather than later.
 
 ### Cost
-Fathom Analytics is not free, but they do have a 7-day free trial. The plans are based on usage and are as follows:
+Fathom Analytics is not free, but they do have a [7-day free trial](https://usefathom.com/ref/AKM9UL). The plans are based on usage and are as follows:
 
 - $14/month - 100,000 page views
 - $24/month - 200,000 page views
@@ -48,9 +48,9 @@ Not to be out done, Jack and Paul, [announced](https://usefathom.com/v3) already
 Getting started is fairly easy.  You create a username and password, and provide credit card information.  Don't worry, it will not charge you.  The first 7 days are free. Once your account is created, you will be able to add your first site.   When you add your site, it will immediately give you the code you need to track your site.  It will also allow you to test that it can see your site right away. Luckily, I have my pipeline setup through Netlify and am able to make the changes, commit to my repository, and merge for deployment to production.  As soon as my site was live, I tested the site and was blown away that I could already see the data coming in!
 
 ### Data Collected
-As you can see in figure 1, the data presented is exactly what you would need to make informed business decisions.
+As you can see in Figure 1, the data presented is exactly what you would need to make informed business decisions.
 ![Fathom Dashboard](/assets/images/fathom_dashboard.png "current fathom dashboard")
-figure 1 - Fathom dashboard
+<span class="figure">Figure 1 - Fathom Analytics dashboard (v2)</span>
 
 The current data points are:
 
@@ -72,5 +72,3 @@ The current data points are:
 With Fathom Analytics, you no longer need to compromise. Privacy focused, the platform is fast, the data is easy to digest, and more importantly, free of Google's grip. You can now find out about your audience and make informed business decisions without feeling guilty. I can't wait for v3.  The giant doesn't stand a chance.
 
 Thank you for reading.
-
-If you want to take advantage of the 7-day free trial, [please use this link](https://usefathom.com/ref/AKM9UL). You'll get $10 off!

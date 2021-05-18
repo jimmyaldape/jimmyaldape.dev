@@ -9,6 +9,9 @@ a:hover {
     @apply underline text-yellow-400;
 }
 
+.links a {
+    @apply uppercase text-sm lg:text-lg;
+}
 .links a:hover {
     @apply no-underline;
 }
@@ -25,6 +28,10 @@ a:hover {
     @apply rounded-full ring-4 text-white;
 }
 
+a.title {
+    @apply text-white;
+}
+
 .preview a:hover {
     @apply no-underline;
 }
@@ -35,7 +42,7 @@ a:hover {
 }
 
 .preview .snippet {
-    @apply mt-4 leading-loose;
+    @apply my-4 leading-loose;
 }
 
 .post p {
@@ -43,11 +50,11 @@ a:hover {
 }
 
 .post h2 {
-    @apply text-3xl text-blue-400 text-center;
+    @apply text-3xl text-center mb-2;
 }
 
 .post h3 {
-    @apply text-2xl mb-2 text-yellow-100;
+    @apply text-2xl mb-2 mt-10 text-blue-300;
 }
 .post .author {
     @apply text-sm text-gray-400 text-center;
@@ -58,12 +65,20 @@ a:hover {
 }
 
 .post img{
-    @apply mt-4;
+    @apply mt-4 rounded-lg;
 }
 .post .content em {
-    @apply text-lg text-blue-200;
+    @apply text-lg text-blue-200 block px-8;
 }
 
 .post .content ul {
     @apply list-disc list-inside mb-4;
+}
+
+.post .content ul li {
+    @apply ml-6;
+}
+
+.post .content span.figure {
+    @apply pl-4 text-green-300;
 }

@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         @include('_partials.analytics')
 </head>
-<body class="min-w-screen min-h-screen text-white bg-gray-800 relative">
+<body class="min-w-screen min-h-screen text-white bg-gray-900 relative">
 <header class="absolute top-0 flex justify-between w-full p-10 pb-0 z-50">
     <div class="flex">
         <a class="logo" href="/" title="jimmyaldape.dev">
