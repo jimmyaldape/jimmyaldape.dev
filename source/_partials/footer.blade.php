@@ -1,4 +1,19 @@
-<footer class="absolute bottom-0 flex justify-center w-full">
-    <div class="mb-4 text-xs text-gray-600 text-center">&copy {{ date('Y') }} Jimmy Aldape. All rights reserved.
-    </div>
-</footer>
+<div class="mb-6 flex justify-between gap-4 mx-auto">
+    <a href="https://twitter.com/jimmyaldape" target="_blank" title="visit Jimmy Aldape on twitter" class="text-gray-500 hover:text-yellow-500">
+        <svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.93 75.93">
+            <path d="M38,0a38,38,0,1,0,38,38A38,38,0,0,0,38,0ZM52.4,29.92c0,.34,0,.68,0,1,0,10.41-7.73,22.42-21.86,22.42a21.41,21.41,0,0,1-11.78-3.54,15.78,15.78,0,0,0,1.83.11,15.21,15.21,0,0,0,9.55-3.37A7.72,7.72,0,0,1,23,41.09a7.64,7.64,0,0,0,1.44.14A8.08,8.08,0,0,0,26.53,41a7.77,7.77,0,0,1-6.09-7.73v-.09a7.21,7.21,0,0,0,3.41,1,8,8,0,0,1-2.44-10.52,21.61,21.61,0,0,0,15.83,8.23A7.62,7.62,0,0,1,37,30a7.78,7.78,0,0,1,7.67-7.88,7.58,7.58,0,0,1,5.61,2.48,15,15,0,0,0,4.88-1.91,7.83,7.83,0,0,1-3.38,4.36,14.81,14.81,0,0,0,4.41-1.24A15.67,15.67,0,0,1,52.4,29.92Z"/>
+        </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/jimmyaldape" target="_blank" title="visit Jimmy Aldape on linkedin" class="text-gray-500 hover:text-yellow-500">
+        <svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.93 75.93">
+            <path class="cls-1" d="M38,0a38,38,0,1,0,38,38A38,38,0,0,0,38,0ZM28.44,54.87h-7v-23h7Zm-3.91-25h-.05a4.16,4.16,0,0,1-4.29-4.2,4.1,4.1,0,0,1,4.39-4.08,4.15,4.15,0,1,1,0,8.28Zm32.91,25h-9V43.22c0-3.09-1-5.19-3.84-5.19a4.19,4.19,0,0,0-3.94,2.79,5.06,5.06,0,0,0-.22,1.86V54.87H32.7s.1-21,0-23h7.74V35.8A8.72,8.72,0,0,1,48,32c5.11,0,9.48,3.27,9.48,10.33Z"/>
+        </svg>
+    </a>
+    <a href="https://github.com/jimmyaldape" target="_blank" title="view a sample of Jimmy Aldape's projects on github" class=" text-gray-500 hover:text-yellow-500">
+        <svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.58 31.77">
+            <path d="M16.29,0a16.29,16.29,0,0,0-5.15,31.75c.82.15,1.11-.36,1.11-.79s0-1.41,0-2.77C7.7,29.18,6.74,26,6.74,26a4.36,4.36,0,0,0-1.81-2.39c-1.47-1,.12-1,.12-1a3.43,3.43,0,0,1,2.49,1.68,3.48,3.48,0,0,0,4.74,1.36,3.46,3.46,0,0,1,1-2.18c-3.62-.41-7.42-1.81-7.42-8a6.3,6.3,0,0,1,1.67-4.37,5.94,5.94,0,0,1,.16-4.31s1.37-.44,4.48,1.67a15.41,15.41,0,0,1,8.16,0c3.11-2.11,4.47-1.67,4.47-1.67A5.91,5.91,0,0,1,25,11.07a6.3,6.3,0,0,1,1.67,4.37c0,6.26-3.81,7.63-7.44,8a3.85,3.85,0,0,1,1.11,3c0,2.18,0,3.94,0,4.47s.29.94,1.12.78A16.29,16.29,0,0,0,16.29,0Z"/>
+        </svg>
+    </a>
+</div>
+<div class="text-xs text-gray-600 text-center">&copy {{ date('Y') }} Jimmy Aldape. All rights reserved.</div>
+

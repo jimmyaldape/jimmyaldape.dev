@@ -6,17 +6,17 @@
         });
     </script>
 @endsection
-@section('offset', 'pt-40 pb-16')
+@section('offset', '')
 @section('body')
-    <div class="content  flex flex-col items-center justify-center">
+    <div class="content flex flex-col mx-auto max-w-4xl">
         <h2 class="text-2xl uppercase text-gray-600 text-center mb-10">Blog</h2>
         @foreach ($posts as $post)
             <section class="w-full">
-                <div class="mb-20 w-4/5 mx-auto">
+                <div class="mb-20">
                     <div class="preview-thumbnail">
 
                     </div>
-                    <div class="preview">
+                    <div class="preview text-left">
                         <div>
                             <a class="title text-2xl lg:text-3xl" href="{{ $post->getPath() }}">{{ $post->title }}</a>
                         </div>
