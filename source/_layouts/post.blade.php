@@ -8,22 +8,22 @@
     </script>
     @endif
 @endsection
-@section('offset', 'pt-40 pb-16')
+@section('offset', '')
 @section('body')
-    <div class="mb-8 w-4/5 mx-auto">
-        <h2 class="text-2xl uppercase text-gray-600 text-center">Blog</h2>
-    </div>
+    <div class="content mx-auto text-left max-w-4xl">
+        <h2 class="text-2xl uppercase text-gray-600 text-center mb-10">Blog</h2>
+        <article class="post">
+            <section class="mb-10">
+                <h2>{{ $page->title }}</h2>
+                <div class="author">by {{ $page->author }} • {{ date('F j, Y', $page->date) }}</div>
+                <div class="content">
+                    @yield('content')
+                </div>
+            </section>
+        </article>
 
-    <article class="post">
-        <section class="w-4/5 mx-auto mb-10">
-            <h2>{{ $page->title }}</h2>
-            <div class="author">by {{ $page->author }} • {{ date('F j, Y', $page->date) }}</div>
-            <div class="content">
-                @yield('content')
-            </div>
-        </section>
-    </article>
-    <div class="w-4/5 mx-auto text-gray-400">
-        If you like what you read follow me on twitter at <a href="https://www.twitter.com/jimmyaldape" title="Jimmy Aldape on Twitter">@jimmyaldape</a>.
+        <div class="text-gray-400">
+            If you like what you read follow me on twitter at <a href="https://www.twitter.com/jimmyaldape" title="Jimmy Aldape on Twitter">@jimmyaldape</a>.
+        </div>
     </div>
 @endsection
