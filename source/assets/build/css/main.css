@@ -224,7 +224,7 @@ ul {
  * 2. Use Tailwind's default "normal" line-height so the user isn't forced
  *    to override it to ensure consistency even when using the default theme.
  */html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Poppins, Helvetica, Arial, sans-serif; /* 1 */
   line-height: 1.5; /* 2 */
 }/**
  * Inherit font-family and line-height from `html` so users can set them as
@@ -405,6 +405,8 @@ video {
 	margin-bottom: 1rem;
 }.mb-8 {
 	margin-bottom: 2rem;
+}.mb-5 {
+	margin-bottom: 1.25rem;
 }.mb-6 {
 	margin-bottom: 1.5rem;
 }.block {
@@ -450,12 +452,13 @@ video {
 }.bg-gray-900 {
 	--tw-bg-opacity: 1;
 	background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+}.bg-gray-800 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
 }.fill-current {
 	fill: currentColor;
 }.p-4 {
 	padding: 1rem;
-}.p-10 {
-	padding: 2.5rem;
 }.p-8 {
 	padding: 2rem;
 }.p-2 {
@@ -463,6 +466,12 @@ video {
 }.py-8 {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
+}.px-6 {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}.py-12 {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }.text-left {
 	text-align: left;
 }.text-center {
@@ -484,6 +493,9 @@ video {
 }.text-base {
 	font-size: 1rem;
 	line-height: 1.5rem;
+}.text-lg {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
 }.text-xs {
 	font-size: 0.75rem;
 	line-height: 1rem;
@@ -510,7 +522,7 @@ video {
 }a.current {
 	border-bottom-width: 2px;
 	--tw-border-opacity: 1;
-	border-color: rgba(59, 130, 246, var(--tw-border-opacity));
+	border-color: rgba(5, 150, 105, var(--tw-border-opacity));
 }.logo {
 	--tw-text-opacity: 1;
 	color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -526,19 +538,26 @@ video {
 	color: rgba(255, 255, 255, var(--tw-text-opacity));
 }.preview a:hover {
 	text-decoration: none;
-}.post p {
+}.article p {
 	margin-bottom: 1.5rem;
-}.post .content h3 {
+}.article .content a {
+	--tw-text-opacity: 1;
+	color: rgba(5, 150, 105, var(--tw-text-opacity));
+	text-decoration: underline;
+}.article .content a:hover {
+	--tw-text-opacity: 1;
+	color: rgba(75, 85, 99, var(--tw-text-opacity));
+}.article .content h3 {
 	margin-bottom: 0.5rem;
 	margin-top: 2.5rem;
 	font-size: 1.5rem;
 	line-height: 2rem;
 	--tw-text-opacity: 1;
-	color: rgba(147, 197, 253, var(--tw-text-opacity));
-}.post .content img {
+	color: rgba(156, 163, 175, var(--tw-text-opacity));
+}.article .content img {
 	margin-top: 1rem;
 	border-radius: 0.5rem;
-}.post .content em {
+}.article .content em {
 	display: block;
 	padding-left: 2rem;
 	padding-right: 2rem;
@@ -546,23 +565,36 @@ video {
 	line-height: 1.75rem;
 	--tw-text-opacity: 1;
 	color: rgba(191, 219, 254, var(--tw-text-opacity));
-}.post .content ul {
+}.article .content ul {
 	margin-bottom: 1rem;
 	list-style-position: inside;
 	list-style-type: disc;
-}.post .content ul li {
+}.article .content ul li {
 	margin-left: 1.5rem;
-}.post .content span.figure {
+}.article .content span.figure {
 	padding-left: 1rem;
 	--tw-text-opacity: 1;
 	color: rgba(110, 231, 183, var(--tw-text-opacity));
-}.hover\:text-yellow-500:hover {
+}.hover\:text-green-600:hover {
 	--tw-text-opacity: 1;
-	color: rgba(245, 158, 11, var(--tw-text-opacity));
-}.hover\:text-blue-500:hover {
-	--tw-text-opacity: 1;
-	color: rgba(59, 130, 246, var(--tw-text-opacity));
+	color: rgba(5, 150, 105, var(--tw-text-opacity));
 }@media (min-width: 768px) {
+
+	.md\:block {
+		display: block;
+	}
+
+	.md\:h-auto {
+		height: auto;
+	}
+
+	.md\:w-auto {
+		width: auto;
+	}
+
+	.md\:p-0 {
+		padding: 0px;
+	}
 
 	.md\:p-4 {
 		padding: 1rem;

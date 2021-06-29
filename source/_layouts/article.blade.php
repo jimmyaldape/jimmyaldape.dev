@@ -11,7 +11,7 @@
 @section('offset', '')
 @section('body')
     <div class="content mx-auto text-left max-w-4xl">
-        <article class="post">
+        <article class="article">
                 <div class="mb-8">
                     <h1 class="text-3xl mb-4">{{ $page->title }}</h1>
                     <p>Posted on {{ date('F j, Y', $page->date) }}</p>

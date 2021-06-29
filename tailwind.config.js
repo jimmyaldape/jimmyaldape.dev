@@ -10,6 +10,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    fontFamily: {
+      'sans': ['Poppins', 'Helvetica', 'Arial', 'sans-serif'],
+      'display': ['Yellowtail'],
+    },
   },
   variants: {},
   plugins: [],

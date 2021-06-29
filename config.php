@@ -6,7 +6,7 @@ return [
     'production' => false,
     'baseUrl' => '',
     'collections' => [
-        'posts' => [
+        'articles' => [
             'path' => 'blog/{date|Y/m}/{-filename}',
             'author' => 'Jimmy Aldape',
             'sort' => '-date',
