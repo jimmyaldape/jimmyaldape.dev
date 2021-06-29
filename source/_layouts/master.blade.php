@@ -8,7 +8,24 @@
         <link rel="canonical" href="{{ $page->getUrl() }}">
         <title>{{ $page->title ? $page->title . ' | ' : '' }} jimmyaldape.dev</title>
         <meta name="description" content="{{ $page->description }}">
-        <title>{{ isset($page->title) ? $page->title . ' | ' : '' }}Jimmy Aldape | Software Engineer</title>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@jimmyaldape">
+        <meta name="twitter:creator" content="@jimmyaldape">
+        <meta name="twitter:title" content="{{ $page->title}}">
+        <meta name="twitter:description" content="{{ $page->description }}">
+        <meta name="twitter:image" content="{{ $page->twitter_image ?? 'https://www.jimmyaldape.dev/assets/images/twitter_generic.jpg' }}">
+
+        <meta property="og:site_name" content="Jimmy Aldape">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:url" content="https://www.jimmaldape.dev{{ $page->getUrl() }}">
+        <meta property="og:title" content="{{ $page->title }}">
+        <meta property="og:description" content="{{ $page->description }}">
+        <meta property="og:image" content="{{ $page->twitter_image ?? 'https://www.jimmyaldape.dev/assets/images/twitter_generic.jpg' }}">
+        <meta property="og:type" content="website">
+        <link href="https://fonts.googleapis.com/css?family=Yellowtail:100,300,300italic,400,400italic,500,500italic,700,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,300italic,400,400italic,500,500italic,700,700italic" rel="stylesheet" type="text/css">
+
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         @include('_partials.analytics')
 </head>
