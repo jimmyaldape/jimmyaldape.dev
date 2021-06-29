@@ -2,24 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-a {
-    @apply text-blue-400;
+a.current {
+    @apply border-b-2 border-green-600
 }
-a:hover {
-    @apply underline text-yellow-400;
-}
-
-.links a {
-    @apply uppercase text-sm lg:text-lg;
-}
-.links a:hover {
-    @apply no-underline;
-}
-
-.links div:hover {
-    @apply border-b border-yellow-400;
-}
-
 .logo {
     @apply text-white;
 }
@@ -37,48 +22,35 @@ a.title {
 }
 
 
-.current {
-    @apply text-yellow-400;
-}
-
-.preview .snippet {
-    @apply my-4 leading-loose;
-}
-
-.post p {
+.article p {
     @apply mb-6;
 }
-
-.post h2 {
-    @apply text-3xl text-center mb-2;
+.article .content a {
+    @apply underline text-green-600;
 }
 
-.post h3 {
-    @apply text-2xl mb-2 mt-10 text-blue-300;
+.article .content a:hover {
+    @apply text-gray-600;
 }
-.post .author {
-    @apply text-sm text-gray-400 text-center;
-}
-
-.post .content {
-    @apply mt-8 leading-loose;
+.article .content h3 {
+    @apply text-2xl mb-2 mt-10 text-gray-400;
 }
 
-.post img{
+.article .content img{
     @apply mt-4 rounded-lg;
 }
-.post .content em {
+.article .content em {
     @apply text-lg text-blue-200 block px-8;
 }
 
-.post .content ul {
+.article .content ul {
     @apply list-disc list-inside mb-4;
 }
 
-.post .content ul li {
+.article .content ul li {
     @apply ml-6;
 }
 
-.post .content span.figure {
+.article .content span.figure {
     @apply pl-4 text-green-300;
 }

@@ -11,11 +11,11 @@
 @section('offset', '')
 @section('body')
     <div class="content mx-auto text-left max-w-4xl">
-        <h2 class="text-2xl uppercase text-gray-600 text-center mb-10">Blog</h2>
-        <article class="post">
-            <section class="mb-10">
-                <h2>{{ $page->title }}</h2>
-                <div class="author">by {{ $page->author }} • {{ date('F j, Y', $page->date) }}</div>
+        <article class="article">
+                <div class="mb-8">
+                    <h1 class="text-3xl mb-4">{{ $page->title }}</h1>
+                    <p>Posted on {{ date('F j, Y', $page->date) }}</p>
+                </div>
                 <div class="content">
                     @yield('content')
                 </div>

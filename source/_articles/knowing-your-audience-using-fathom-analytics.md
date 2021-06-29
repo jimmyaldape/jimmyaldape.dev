@@ -1,11 +1,11 @@
 ---
-extends: _layouts.post
+extends: _layouts.article
 title: Knowing Your Audience Doesn't Have to be Compromising
 description: Knowing your audience doesn't have to be compromising. A quick look into how Fathom Analytics is a simple, light-weight, privacy-first alternative to Google Analytics.
 date: 2021-05-04
 section: content
-snippet: You've finished and deployed your website.  You've marketed and funneled users to your site.  Now you decide to gather some analytic data so that you can know your audience.  Naturally you decide to go with the goliath of analytics, Google, after all that's all you've heard about and know. However, you're at a crossroads.  Privacy matters to you but you need to know your audience. You also know Google's version is powerful but complicated. What do you do? Do you submit and compromise? No! Enter the david of our time, Fathom Analytics, the simple, light-weight, privacy-first alternative to Google ...
 goal_code: K89WH2PL
+twitter_image: https://www.jimmyaldape.dev/assets/images/twitter_blog.jpg
 ---
 
 You've finished and deployed your website.  You've marketed and funneled users to your site.  Now you decide to gather some analytic data so that you can know your audience.  Naturally you decide to go with the goliath of analytics, Google, after all that's all you've heard about and know. However, you're at a crossroads.  Privacy matters to you but you need to know your audience. You also know Google's version is powerful but complicated. What do you do? Do you submit and compromise? No! Enter the david of our time, [Fathom Analytics](https://usefathom.com/), the simple, light-weight, privacy-first alternative to Google.
