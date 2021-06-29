@@ -2,24 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-a {
-    @apply text-blue-400;
+a.current {
+    @apply border-b-2 border-blue-500
 }
-a:hover {
-    @apply underline text-yellow-400;
-}
-
-.links a {
-    @apply uppercase text-sm lg:text-lg;
-}
-.links a:hover {
-    @apply no-underline;
-}
-
-.links div:hover {
-    @apply border-b border-yellow-400;
-}
-
 .logo {
     @apply text-white;
 }
@@ -37,34 +22,15 @@ a.title {
 }
 
 
-.current {
-    @apply text-yellow-400;
-}
-
-.preview .snippet {
-    @apply my-4 leading-loose;
-}
-
 .post p {
     @apply mb-6;
 }
 
-.post h2 {
-    @apply text-3xl text-center mb-2;
-}
-
-.post h3 {
+.post .content h3 {
     @apply text-2xl mb-2 mt-10 text-blue-300;
 }
-.post .author {
-    @apply text-sm text-gray-400 text-center;
-}
 
-.post .content {
-    @apply mt-8 leading-loose;
-}
-
-.post img{
+.post .content img{
     @apply mt-4 rounded-lg;
 }
 .post .content em {

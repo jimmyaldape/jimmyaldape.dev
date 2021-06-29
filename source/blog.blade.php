@@ -6,33 +6,43 @@
         });
     </script>
 @endsection
+
+@section('section-title')
+    <div class="py-8 md:py-16 text-3xl md:text-5xl">
+        <div class="font-bold">Blog</div>
+    </div>
+
+@endsection
+
 @section('offset', '')
 @section('body')
     <div class="content flex flex-col mx-auto max-w-4xl">
-        <h2 class="text-2xl uppercase text-gray-600 text-center mb-10">Blog</h2>
+        <h2 class="font-bold mb-12 text-gray-500 text-xl uppercase">
+            Posts
+        </h2>
         @foreach ($posts as $post)
             <section class="w-full">
-                <div class="mb-20">
+                <div class="mb-12">
                     <div class="preview-thumbnail">
 
                     </div>
                     <div class="preview text-left">
                         <div>
-                            <a class="title text-2xl lg:text-3xl" href="{{ $post->getPath() }}">{{ $post->title }}</a>
+                            <span class="text-sm text-gray-500 font-bold">{{date('F j, Y', $post->date) }}</span>
                         </div>
-                        <div>
-                            <span class="text-xs text-gray-400">{{ date('F j, Y', $post->date) }}</span>
+                        <div class="mb-2">
+                            <a class="font-bold" href="{{ $post->getPath() }}">
+                                <h3 class="text-2xl lg:text-3xl">{{ $post->title }}</h3>
+                            </a>
                         </div>
-                        <div class="snippet">
-                            {{ $post->snippet }}
-                        </div>
-                        <div>
-                            <p><a href="{{ $post->getPath() }}">Read More</a></p>
+                        <div class="leading-tight">
+                            {{ $post->excerpt(120) }}
                         </div>
                     </div>
                 </div>
             </section>
         @endforeach
+
     </div>
 @endsection
 
